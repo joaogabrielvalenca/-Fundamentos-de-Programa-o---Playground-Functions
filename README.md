@@ -34,7 +34,7 @@ No seu time de desenvolvimento, você ficou responsável por implementar o códi
   
   * Este projeto é individual
   * Será `1` dia de projeto
-  * Data para entrega final do projeto: `04/11/2022 14:00`
+  * Data para entrega no prazo regular: `04/11/2022 14:00`
 
 </details>
 

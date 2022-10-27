@@ -4,14 +4,15 @@ function compareTrue() {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  return (base*height)/2
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(frase) {
+  return arrayFrase = frase.split(" ")
 }
+
 
 // Desafio 4
 function concatName() {
@@ -19,19 +20,46 @@ function concatName() {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins*3) + (ties*1)
 }
+
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(arrayNumeros = [9,1,2,3,9,5,7]) {
+  let maiorNumero = arrayNumeros[0];
+  let numRepeticoes = 1;
+  for (let i = 1; i < arrayNumeros.length; i++) {
+    if (arrayNumeros[i] > maiorNumero) {
+      maiorNumero = arrayNumeros[i]
+    } else if(arrayNumeros[i] === maiorNumero) {
+      numRepeticoes += 1
+      console.log('else if' + numRepeticoes)
+    }
+    numRepeticoes = numRepeticoes + 1
+    console.log('no for' + numRepeticoes)
+  }
+  return numRepeticoes; 
 }
 
+
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let dif1 = Math.abs(cat1 - mouse);
+  let dif2 = Math.abs(cat2 - mouse);
+  if (dif1 < dif2) {
+    return "cat1";
+  } else if (dif2 < dif1) {
+      return "cat2";
+    } else {
+      return "os gatos trombam e o rato foge"
+  }
+    
 }
+
+console.log(catAndMouse(1,5,9))
+console.log(catAndMouse(5,2,8))
+
 
 // Desafio 8
 function fizzBuzz() {

@@ -1,11 +1,11 @@
 // Desafio 1
 function compareTrue(pal1, pal2) {
-  if (pal1 && pal2 === 'girafa' && 'elefante') {
+  if (pal1 === true && pal2 === true) {
     return true;
   } else {
     return false;
   }
-} //meio errado
+} //acho que ok
 
 
 // Desafio 2

@@ -1,28 +1,35 @@
 // Desafio 1
-function compareTrue() {
-  // começando projeto
-}
+function compareTrue(pal1, pal2) {
+  if (pal1 && pal2 === 'girafa' && 'elefante') {
+    return true;
+  } else {
+    return false;
+  }
+} //meio errado
+
 
 // Desafio 2
 function calcArea(base, height) {
   return (base*height)/2
-}
+} //de boa
 
 // Desafio 3
 function splitSentence(frase) {
   return arrayFrase = frase.split(" ")
-}
+} //de boa
 
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(arr) {
+  let index = arr.length - 1
+  return `${arr[0]}, ${arr[index]}`
+} //de boa
+
 
 // Desafio 5
 function footballPoints(wins, ties) {
   return (wins*3) + (ties*1)
-}
+} //de boa
 
 
 // Desafio 6
@@ -55,7 +62,7 @@ function catAndMouse(mouse, cat1, cat2) {
       return "os gatos trombam e o rato foge"
   }
     
-}
+} // de boa
 
 
 // Desafio 8
@@ -69,23 +76,34 @@ function fizzBuzz(arrayNums) {
     }   else if (arrayNums[i] % 3 === 0) {
           result[i]='fizz';
           }else {
-            result[i]='bug!' 
+            result[i]='bug!'; 
     }
 }
-return result
-}
+return result;
+} // de boa
       
-   
-
-console.log(fizzBuzz([2,15,7,9,45]))
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(phrase) {
+  let changeA = phrase.replace(/a/g, "1");
+  let changeE = changeA.replace(/e/g, "2");
+  let changeI = changeE.replace(/i/g, "3");
+  let changeO = changeI.replace(/o/g, "4");
+  let changeTotal = changeO.replace(/u/g, "5");
+  
+  return changeTotal;
 }
-function decode() {
-  // seu código aqui
+
+function decode(newPhrase) {
+  let change1 = newPhrase.replace(/1/g, "a");
+  let change2 = change1.replace(/2/g, "e");
+  let change3 = change2.replace(/3/g, "i");
+  let change4 = change3.replace(/4/g, "o");
+  let changeNewTotal = change4.replace(/5/g, "u");
+
+  return changeNewTotal;
 }
+
 
 // Desafio 10
 function techList() {

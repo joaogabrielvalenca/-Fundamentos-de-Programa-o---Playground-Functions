@@ -106,9 +106,19 @@ function decode(newPhrase) {
 
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  let obj = {}
+  for (i = 0; i < tech.length; i++) {
+    let chave = tech[i]
+    if (tech != undefined) {        
+      obj[chave] = name;
+    } else {
+      return 'vazio!'
+    }   
+  }
+  return obj
 }
+
 
 module.exports = {
   calcArea,

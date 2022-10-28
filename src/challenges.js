@@ -22,7 +22,7 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(arr) {
   let index = arr.length - 1
-  return `${arr[0]}, ${arr[index]}`
+  return `${arr[index]}, ${arr[0]}`
 } //de boa
 
 
@@ -108,7 +108,7 @@ function decode(newPhrase) {
 // Desafio 10
 function techList(tech, name) {
   let obj = {}
-  for (i = 0; i < tech.length; i++) {
+  for (let i = 0; i < tech.length; i++) {
     let chave = tech[i]
     if (tech != undefined) {        
       obj[chave] = name;
@@ -118,6 +118,7 @@ function techList(tech, name) {
   }
   return obj
 }
+
 
 
 module.exports = {

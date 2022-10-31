@@ -107,16 +107,20 @@ function decode(newPhrase) {
 
 // Desafio 10
 function techList(tech, name) {
-  let obj = {}
+  const myArray = []
   for (let i = 0; i < tech.length; i++) {
-    let chave = tech[i]
-    if (tech != undefined) {        
-      obj[chave] = name;
-    } else {
-      return 'vazio!'
+    let chave = tech[i] 
+    if (chave != undefined || chave != [] || chave != '') {        
+      let valorObj = {} 
+      valorObj[chave] = name;
+      myArray.push(valorObj)
+      valorObj = 0;
+    } else  {
+      myArray.push('vazio')
     }   
-  }
-  return obj
+  }  
+    return myArray
+   
 }
 
 

@@ -48,6 +48,7 @@ function highestCount(arrayNumeros) {
   }
   return repeticoes;
 }
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
 
 
 // Desafio 7
